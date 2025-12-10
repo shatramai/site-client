@@ -130,3 +130,19 @@ footer a:hover {
   margin: 0.3rem 0;
 }
 
+
+.doctolib-btn {
+  background: #0596de; /* couleur Doctolib */
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  margin-left: auto;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.doctolib-btn:hover {
+  background: #007ab8;
+}
+
