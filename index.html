@@ -1,81 +1,131 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <title>Psychologue à Lille – Adrien RAULT</title>
-  <meta name="description" content="Adrien RAULT, psychologue à Lille, vous accueille au cabinet pour un accompagnement psychologique bienveillant : adultes, adolescents, consultations individuelles." />
+  <title>Psychologue à Lille – Adrien Rault</title>
+  <meta name="description" content="Adrien Rault, psychologue à Lille. Consultations individuelles adultes/adolescents. Cadre bienveillant, confidentiel et adapté à votre rythme." />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <header>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <header class="page-hero" style="--hero-img: url('assets/hero-home.jpg');">
     <div class="container">
-      <nav>
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="presentation.html">Présentation</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="hero-top">
+        <div></div>
+        <a class="brand" href="index.html">
+          <div class="brand__name">Adrien Rault</div>
+          <div class="brand__tag">Psychologue • Lille</div>
+        </a>
+        <a class="cta cta--doctolib" href="https://www.doctolib.fr/psychologue/lille/nom-du-psy" target="_blank" rel="noopener">Prendre RDV</a>
+      </div>
+
+      <div class="hero-nav">
+        <nav class="nav" aria-label="Navigation principale">
+          <a href="index.html">Accueil</a>
+          <a href="presentation.html">Présentation</a>
+          <a href="accompagnement.html">Accompagnement</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+
+      <div class="hero-cardwrap reveal">
+        <div class="hero-card">
+          <h1>Un accompagnement psychologique clair, humain et adapté à votre rythme</h1>
+          <p>
+            Consultations à Lille — <strong>[adultes / adolescents]</strong>. Approche intégrative, espace confidentiel,
+            pour traverser anxiété, stress, difficultés relationnelles ou périodes de transition.
+          </p>
+
+          <div class="actions" style="justify-content:center;">
+            <a class="cta" href="contact.html">Me contacter</a>
+            <a class="cta cta--ghost" href="presentation.html">Découvrir mon parcours</a>
+          </div>
+
+          <div class="pills" style="justify-content:center;">
+            <span class="pill">Anxiété & stress</span>
+            <span class="pill">Estime de soi</span>
+            <span class="pill">Dépression</span>
+            <span class="pill">Transitions de vie</span>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
-  <a href="https://www.doctolib.fr/psychologue/lille/nom-du-psy"
-   class="doctolib-btn" target="_blank">
-  Prendre rendez-vous sur Doctolib
-</a>
 
+  <main id="contenu">
+    <div class="container">
+      <section class="section">
+        <div class="section-head reveal">
+          <h2>Comment se déroulent les séances ?</h2>
+          <p class="muted">Une structure simple, pour que vous sachiez où vous mettez les pieds.</p>
+        </div>
 
-  <main>
-    <div class="container hero">
-      <h1>Psychologue à Lille – Adrien RAULT</h1>
-      <p>
-        Psychologue à Lille, Adrien RAULT vous accompagne dans un cadre bienveillant et sécurisant.
-        Le cabinet accueille les <strong>adultes</strong> et/ou <strong>adolescents</strong> (à adapter) pour des
-        consultations individuelles, un suivi ponctuel ou un travail thérapeutique plus approfondi.
-      </p>
-      <p>
-        Vous pouvez consulter pour des difficultés liées à l’anxiété, la dépression, le stress, les relations
-        familiales, professionnelles, ou toute situation de vie qui vous semble difficile à traverser seul·e.
-      </p>
-      <a href="contact.html" class="btn">Prendre contact</a>
+        <div class="grid">
+          <article class="card reveal">
+            <h3>1) Premier rendez-vous</h3>
+            <p>
+              Nous clarifions votre demande, votre contexte, et ce que vous attendez. Vous repartez avec une vision plus
+              claire de la suite possible.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <h3>2) Un suivi à votre rythme</h3>
+            <p>
+              Séances régulières ou ponctuelles selon vos besoins. L’objectif : avancer de manière réaliste, sans brutalité.
+            </p>
+          </article>
+
+          <article class="card card--wide reveal">
+            <h3>Ce sur quoi nous pouvons travailler</h3>
+            <p>
+              Difficultés émotionnelles, charge mentale, épuisement, ruminations, confiance en soi, relations,
+              événements de vie (séparation, deuil, changements pro). <strong>Si ça pèse, ça mérite d’être entendu.</strong>
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head reveal">
+          <h2>Cabinet à Lille</h2>
+          <p class="muted">Infos pratiques (à compléter)</p>
+        </div>
+
+        <div class="grid">
+          <div class="card card--third reveal">
+            <h3>Adresse</h3>
+            <p>[Adresse du cabinet, 59000 Lille]</p>
+          </div>
+          <div class="card card--third reveal">
+            <h3>Accès</h3>
+            <p>[Métro / bus / parking / vélo]</p>
+          </div>
+          <div class="card card--third reveal">
+            <h3>Public</h3>
+            <p>[Adultes, adolescents…]</p>
+          </div>
+        </div>
+
+        <div class="actions reveal">
+          <a class="cta" href="contact.html">Contact & localisation</a>
+          <a class="cta cta--ghost" href="accompagnement.html">Voir les motifs</a>
+        </div>
+      </section>
     </div>
-
-    <section class="section">
-      <div class="container">
-        <h2>Pourquoi consulter un psychologue à Lille&nbsp;?</h2>
-        <p>
-          La consultation avec un psychologue permet de disposer d’un espace d’écoute neutre, confidentiel,
-          et sans jugement. À Lille, Adrien RAULT propose une approche centrée sur la personne,
-          en s’adaptant à votre rythme et à vos besoins.
-        </p>
-        <p>
-          Les séances permettent de mettre en mots ce que vous traversez, de mieux comprendre vos
-          émotions et de trouver ensemble des pistes pour soulager votre souffrance psychique.
-        </p>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <h2>Cabinet de psychologie à Lille</h2>
-        <p><strong>Adresse&nbsp;:</strong> [Adresse du cabinet, code postal, Lille]</p>
-        <p><strong>Accès&nbsp;:</strong> [Métro / bus / station de vélo / parking à proximité – à compléter]</p>
-        <p><strong>Public accueilli&nbsp;:</strong> [Adultes, adolescents, couples, familles – à adapter]</p>
-        <p>
-          Pour en savoir plus sur le parcours de Adrien RAULT et son approche, vous pouvez
-          consulter la page <a href="presentation.html">Présentation</a>.
-        </p>
-      </div>
-    </section>
   </main>
 
   <footer>
-    <div class="container">
-      <p>© Adrien RAULT – Psychologue à Lille – [Année]</p>
-      <p><a href="contact.html">Contact</a> · [Prévoir un lien Mentions légales si nécessaire]</p>
+    <div class="container footer-inner">
+      <p>© Adrien Rault — <span id="year"></span></p>
+      <p><a href="mentions-legales.html">Mentions légales</a> · <a href="contact.html">Contact</a></p>
     </div>
   </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
-
