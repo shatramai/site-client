@@ -3,49 +3,64 @@
 <head>
   <meta charset="UTF-8" />
   <title>Psychologue à Lille – Adrien Rault</title>
-  <meta name="description" content="Adrien Rault, psychologue à Lille. Consultations individuelles adultes/adolescents. Cadre bienveillant, confidentiel et adapté à votre rythme." />
+  <meta name="description" content="Adrien Rault, psychologue à Lille. Consultations individuelles adultes/adolescents. Cadre bienveillant et confidentiel." />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <a class="skip-link" href="#contenu">Aller au contenu</a>
 
-  <header class="page-hero" style="--hero-img: url('assets/hero-home.jpg');">
+  <!-- 1) HEADER : seulement titres -->
+  <header class="site-header">
     <div class="container">
-      <div class="hero-top">
-        <div></div>
-        <a class="brand" href="index.html">
-          <div class="brand__name">Adrien Rault</div>
-          <div class="brand__tag">Psychologue • Lille</div>
-        </a>
-        <a class="cta cta--doctolib" href="https://www.doctolib.fr/psychologue/lille/nom-du-psy" target="_blank" rel="noopener">Prendre RDV</a>
-      </div>
+      <h1 class="site-title">Adrien Rault</h1>
+      <p class="site-subtitle">Psychologue • Lille</p>
+    </div>
+  </header>
 
-      <div class="hero-nav">
-        <nav class="nav" aria-label="Navigation principale">
-          <a href="index.html">Accueil</a>
-          <a href="presentation.html">Présentation</a>
-          <a href="accompagnement.html">Accompagnement</a>
-          <a href="faq.html">FAQ</a>
-          <a href="contact.html">Contact</a>
-        </nav>
-      </div>
+  <!-- 2) NAV : div séparée -->
+  <div class="nav-band">
+    <div class="container">
+      <nav class="nav" aria-label="Navigation principale">
+        <a class="is-active" href="index.html">Accueil</a>
+        <a href="presentation.html">Présentation</a>
+        <a href="accompagnement.html">Accompagnement</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </div>
 
-      <div class="hero-cardwrap reveal">
-        <div class="hero-card">
-          <h1>Un accompagnement psychologique clair, humain et adapté à votre rythme</h1>
+  <!-- 3) HERO : div séparée avec image DANS la div + card par dessus -->
+  <section class="hero" aria-label="Présentation">
+    <div class="container">
+      <div class="hero-frame">
+        <!-- image DANS la div (pas en background du header/nav) -->
+        <img class="hero-image" src="assets/hero-home.jpg" alt="" />
+
+        <!-- voile discret pour lisibilité -->
+        <div class="hero-overlay" aria-hidden="true"></div>
+
+        <!-- card transparente par-dessus -->
+        <div class="hero-card reveal">
+          <h2>Un espace d’écoute confidentiel, pour avancer à votre rythme</h2>
           <p>
-            Consultations à Lille — <strong>[adultes / adolescents]</strong>. Approche intégrative, espace confidentiel,
-            pour traverser anxiété, stress, difficultés relationnelles ou périodes de transition.
+            Consultations à Lille — <strong>[adultes / adolescents]</strong>. Anxiété, stress, estime de soi,
+            difficultés relationnelles, transitions de vie. Approche bienveillante et structurée.
           </p>
 
-          <div class="actions" style="justify-content:center;">
-            <a class="cta" href="contact.html">Me contacter</a>
-            <a class="cta cta--ghost" href="presentation.html">Découvrir mon parcours</a>
+          <div class="hero-actions">
+            <a class="btn" href="contact.html">Me contacter</a>
+            <a class="btn btn--ghost"
+               href="https://www.doctolib.fr/psychologue/lille/nom-du-psy"
+               target="_blank" rel="noopener">
+              Prendre RDV (Doctolib)
+            </a>
           </div>
 
-          <div class="pills" style="justify-content:center;">
+          <div class="pills" aria-label="Spécialités (exemples)">
             <span class="pill">Anxiété & stress</span>
             <span class="pill">Estime de soi</span>
             <span class="pill">Dépression</span>
@@ -54,21 +69,24 @@
         </div>
       </div>
     </div>
-  </header>
+  </section>
 
+  <!-- MAIN (contenu de page) -->
   <main id="contenu">
     <div class="container">
       <section class="section">
         <div class="section-head reveal">
           <h2>Comment se déroulent les séances ?</h2>
-          <p class="muted">Une structure simple, pour que vous sachiez où vous mettez les pieds.</p>
+          <p class="muted">
+            Une structure simple, pour que vous sachiez à quoi vous attendre.
+          </p>
         </div>
 
         <div class="grid">
           <article class="card reveal">
             <h3>1) Premier rendez-vous</h3>
             <p>
-              Nous clarifions votre demande, votre contexte, et ce que vous attendez. Vous repartez avec une vision plus
+              Nous clarifions votre demande, votre contexte, et vos objectifs. Vous repartez avec une vision plus
               claire de la suite possible.
             </p>
           </article>
@@ -76,15 +94,16 @@
           <article class="card reveal">
             <h3>2) Un suivi à votre rythme</h3>
             <p>
-              Séances régulières ou ponctuelles selon vos besoins. L’objectif : avancer de manière réaliste, sans brutalité.
+              Séances régulières ou ponctuelles selon vos besoins. L’objectif : avancer de manière réaliste,
+              sans brutalité.
             </p>
           </article>
 
           <article class="card card--wide reveal">
-            <h3>Ce sur quoi nous pouvons travailler</h3>
+            <h3>Thématiques fréquentes</h3>
             <p>
-              Difficultés émotionnelles, charge mentale, épuisement, ruminations, confiance en soi, relations,
-              événements de vie (séparation, deuil, changements pro). <strong>Si ça pèse, ça mérite d’être entendu.</strong>
+              Anxiété, stress, baisse d’humeur, charge mentale, difficultés relationnelles, transitions de vie.
+              <strong>Si cela pèse, cela mérite d’être entendu.</strong>
             </p>
           </article>
         </div>
@@ -93,7 +112,7 @@
       <section class="section">
         <div class="section-head reveal">
           <h2>Cabinet à Lille</h2>
-          <p class="muted">Infos pratiques (à compléter)</p>
+          <p class="muted">Informations pratiques (à compléter)</p>
         </div>
 
         <div class="grid">
@@ -101,10 +120,12 @@
             <h3>Adresse</h3>
             <p>[Adresse du cabinet, 59000 Lille]</p>
           </div>
+
           <div class="card card--third reveal">
             <h3>Accès</h3>
             <p>[Métro / bus / parking / vélo]</p>
           </div>
+
           <div class="card card--third reveal">
             <h3>Public</h3>
             <p>[Adultes, adolescents…]</p>
@@ -112,20 +133,37 @@
         </div>
 
         <div class="actions reveal">
-          <a class="cta" href="contact.html">Contact & localisation</a>
-          <a class="cta cta--ghost" href="accompagnement.html">Voir les motifs</a>
+          <a class="btn" href="contact.html">Contact & localisation</a>
+          <a class="btn btn--ghost" href="accompagnement.html">Voir les motifs</a>
         </div>
       </section>
     </div>
   </main>
 
-  <footer>
+  <!-- FOOTER -->
+  <footer class="site-footer">
     <div class="container footer-inner">
       <p>© Adrien Rault — <span id="year"></span></p>
-      <p><a href="mentions-legales.html">Mentions légales</a> · <a href="contact.html">Contact</a></p>
+      <p>
+        <a href="mentions-legales.html">Mentions légales</a> ·
+        <a href="contact.html">Contact</a>
+      </p>
     </div>
   </footer>
 
-  <script src="app.js"></script>
+  <script>
+    // Année auto
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Reveal (fade + slide très subtil)
+    const items = document.querySelectorAll(".reveal");
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) e.target.classList.add("is-visible");
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -10% 0px" });
+
+    items.forEach(el => io.observe(el));
+  </script>
 </body>
 </html>
