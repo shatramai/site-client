@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <title>Contact & localisation – Adrien Rault</title>
-  <meta name="description" content="Contacter Adrien Rault, psychologue à Lille. Adresse, accès et prise de rendez-vous." />
+  <meta name="description" content="Adresse du cabinet : 59 Boulevard Vauban, 59800 Lille. Téléphone, accès, carte." />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -43,13 +43,19 @@
 
         <div class="hero-card reveal">
           <h2>Contact & localisation</h2>
-          <p>Vous pouvez prendre rendez-vous en ligne ou me contacter directement.</p>
+          <p>Prendre rendez-vous en ligne ou contacter le cabinet.</p>
 
           <div class="hero-actions">
-            <a class="btn" href="mailto:email@domaine.fr">Envoyer un email</a>
-            <a class="btn btn--ghost" href="https://www.doctolib.fr/psychologue/lille/nom-du-psy" target="_blank" rel="noopener">
+            <a class="btn" href="tel:+33756808451">Appeler</a>
+            <a class="btn btn--ghost" href="https://www.doctolib.fr/psychologue/lille/adrien-rault" target="_blank" rel="noopener">
               Prendre RDV (Doctolib)
             </a>
+          </div>
+
+          <div class="pills" aria-label="Infos rapides">
+            <span class="pill">59 Bd Vauban</span>
+            <span class="pill">59800 Lille</span>
+            <span class="pill">Chèques / espèces</span>
           </div>
         </div>
       </div>
@@ -61,38 +67,64 @@
       <section class="section">
         <div class="section-head reveal">
           <h2>Informations pratiques</h2>
-          <p class="muted">À compléter (adresse, téléphone, accès, horaires).</p>
+          <p class="muted">Accès, horaires, coordonnées</p>
         </div>
 
         <div class="grid">
           <article class="card reveal">
             <h3>Adresse</h3>
-            <p>[Adresse complète] — Lille</p>
-            <p class="muted">Accès : [Métro / bus / parking / vélo]</p>
+            <p>
+              <strong>59 Boulevard Vauban</strong><br>
+              59800 Lille
+            </p>
+
+            <h3 style="margin-top:14px;">Transports</h3>
+            <p>
+              Bus — Université Catholique (lignes 12 et 18)<br>
+              Bus — Rue de Toul (ligne 18)<br>
+              Bus — Rue du Port (ligne CITL)
+            </p>
           </article>
 
           <article class="card reveal">
-            <h3>Contact</h3>
+            <h3>Coordonnées</h3>
             <p>
-              Téléphone : <strong>[xx xx xx xx xx]</strong><br>
-              Email : <strong>email@domaine.fr</strong>
+              Téléphone : <a href="tel:+33756808451"><strong>07 56 80 84 51</strong></a><br>
+              RDV : <a href="https://www.doctolib.fr/psychologue/lille/adrien-rault" target="_blank" rel="noopener"><strong>Doctolib</strong></a>
             </p>
-            <div class="actions">
-              <a class="btn" href="mailto:email@domaine.fr">Email</a>
-              <a class="btn btn--ghost" href="tel:+33XXXXXXXXX">Appeler</a>
-            </div>
+
+            <h3 style="margin-top:14px;">Horaires</h3>
+            <p>
+              Lun : 09h–13h / 14h–18h<br>
+              Mar : 09h–13h / 14h–18h<br>
+              Mer : 09h–13h<br>
+              Jeu : 09h–13h / 14h–18h<br>
+              Ven : 09h–13h
+            </p>
+
+            <h3 style="margin-top:14px;">Paiement</h3>
+            <p>
+              Chèques et espèces (CB non acceptée)<br>
+              Consultation : <strong>60 €</strong>
+            </p>
           </article>
 
           <article class="card card--wide reveal">
-            <h3>Plan / localisation</h3>
-            <p class="muted">Tu peux intégrer une carte Google Maps (iframe) quand tu as l’adresse.</p>
+            <h3>Carte</h3>
+            <p class="muted">Vous pouvez utiliser la carte ci-dessous pour localiser le cabinet.</p>
 
-            <!-- Exemple iframe (à coller quand tu as l’adresse)
             <iframe
-              src="https://www.google.com/maps/embed?pb=..."
-              width="100%" height="320" style="border:0; border-radius:16px;"
-              loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            -->
+              title="Cabinet Adrien Rault – 59 Boulevard Vauban, 59800 Lille"
+              src="https://www.google.com/maps?q=59%20Boulevard%20Vauban%2059800%20Lille&output=embed"
+              width="100%"
+              height="320"
+              style="border:0; border-radius:16px;"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <p class="muted" style="margin-top:12px;">
+              Parking public : Résidence Mogador (privé) — 82 Rue Meurein, Lille
+            </p>
           </article>
         </div>
       </section>
