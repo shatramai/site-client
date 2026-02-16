@@ -3,94 +3,124 @@
 <head>
   <meta charset="UTF-8" />
   <title>FAQ – Adrien Rault</title>
-  <meta name="description" content="Questions fréquentes : déroulement, durée, tarifs, confidentialité, annulation, première séance." />
+  <meta name="description" content="Questions fréquentes : déroulement, durée, tarifs, confidentialité, annulation." />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <a class="skip-link" href="#contenu">Aller au contenu</a>
 
-  <header class="page-hero" style="--hero-img: url('assets/hero-faq.jpg');">
+  <header class="site-header">
     <div class="container">
-      <div class="hero-top">
-        <div></div>
-        <a class="brand" href="index.html">
-          <div class="brand__name">Adrien Rault</div>
-          <div class="brand__tag">Psychologue • Lille</div>
-        </a>
-        <a class="cta cta--doctolib" href="https://www.doctolib.fr/psychologue/lille/nom-du-psy" target="_blank" rel="noopener">Prendre RDV</a>
-      </div>
+      <h1 class="site-title">Adrien Rault</h1>
+      <p class="site-subtitle">Psychologue • Lille</p>
+    </div>
+  </header>
 
-      <div class="hero-nav">
-        <nav class="nav" aria-label="Navigation principale">
-          <a href="index.html">Accueil</a>
-          <a href="presentation.html">Présentation</a>
-          <a href="accompagnement.html">Accompagnement</a>
-          <a href="faq.html">FAQ</a>
-          <a href="contact.html">Contact</a>
-        </nav>
-      </div>
+  <div class="nav-band">
+    <div class="container">
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="presentation.html">Présentation</a>
+        <a href="accompagnement.html">Accompagnement</a>
+        <a class="is-active" href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </div>
 
-      <div class="hero-cardwrap reveal">
-        <div class="hero-card">
-          <h1>FAQ</h1>
-          <p>Réponses simples aux questions les plus fréquentes.</p>
+  <section class="hero" aria-label="FAQ">
+    <div class="container">
+      <div class="hero-frame">
+        <img class="hero-image" src="assets/hero-faq.jpg" alt="" />
+        <div class="hero-overlay" aria-hidden="true"></div>
+
+        <div class="hero-card reveal">
+          <h2>FAQ</h2>
+          <p>Des réponses simples aux questions les plus fréquentes.</p>
+
+          <div class="hero-actions">
+            <a class="btn" href="contact.html">Me contacter</a>
+            <a class="btn btn--ghost" href="https://www.doctolib.fr/psychologue/lille/nom-du-psy" target="_blank" rel="noopener">
+              Prendre RDV (Doctolib)
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </header>
+  </section>
 
   <main id="contenu">
     <div class="container">
       <section class="section">
         <div class="section-head reveal">
           <h2>Questions fréquentes</h2>
-          <p class="muted">À adapter selon tes infos (durée, tarifs, etc.).</p>
+          <p class="muted">À compléter (durée, tarifs, modalités, etc.).</p>
         </div>
 
-        <div class="faq reveal">
-          <details>
-            <summary>Combien de temps dure une séance ?</summary>
-            <p>En général, une séance dure <strong>[45/50/60 minutes]</strong>. Cela peut varier selon le cadre proposé.</p>
-          </details>
+        <!-- FAQ simple sans nouveau CSS : on réutilise .card -->
+        <div class="grid">
+          <article class="card card--wide reveal">
+            <h3>Combien de temps dure une séance ?</h3>
+            <p>En général, une séance dure <strong>[45/50/60 minutes]</strong>.</p>
+          </article>
 
-          <details>
-            <summary>À quelle fréquence venir ?</summary>
-            <p>Souvent toutes les 1 à 2 semaines au début, puis on ajuste selon vos besoins, votre rythme et vos objectifs.</p>
-          </details>
+          <article class="card card--wide reveal">
+            <h3>À quelle fréquence venir ?</h3>
+            <p>Souvent toutes les 1 à 2 semaines au début, puis on ajuste ensemble selon votre besoin.</p>
+          </article>
 
-          <details>
-            <summary>Quels sont les tarifs ?</summary>
-            <p>Le tarif d’une séance est de <strong>[XX €]</strong>. (Préciser modalités : CB, espèces, virement, etc.)</p>
-          </details>
+          <article class="card card--wide reveal">
+            <h3>Quels sont les tarifs ?</h3>
+            <p>Le tarif d’une séance est de <strong>[XX €]</strong>. Modalités : [CB / espèces / virement].</p>
+          </article>
 
-          <details>
-            <summary>La confidentialité est-elle garantie ?</summary>
-            <p>Oui. Les échanges sont confidentiels, dans le respect du cadre déontologique.</p>
-          </details>
+          <article class="card card--wide reveal">
+            <h3>La confidentialité est-elle garantie ?</h3>
+            <p>Oui, les échanges sont confidentiels dans le respect du cadre déontologique.</p>
+          </article>
 
-          <details>
-            <summary>Comment annuler ou déplacer un rendez-vous ?</summary>
-            <p>Vous pouvez annuler/déplacer via <strong>Doctolib</strong> ou en me contactant, idéalement <strong>[48h]</strong> avant.</p>
-          </details>
+          <article class="card card--wide reveal">
+            <h3>Comment annuler ou déplacer un rendez-vous ?</h3>
+            <p>Vous pouvez annuler/déplacer via Doctolib ou me contacter, idéalement <strong>[48h]</strong> avant.</p>
+          </article>
         </div>
 
         <div class="actions reveal">
-          <a class="cta" href="contact.html">Me contacter</a>
-          <a class="cta cta--ghost" href="https://www.doctolib.fr/psychologue/lille/nom-du-psy" target="_blank" rel="noopener">RDV Doctolib</a>
+          <a class="btn" href="contact.html">Contact & localisation</a>
+          <a class="btn btn--ghost" href="accompagnement.html">Voir les motifs</a>
         </div>
       </section>
     </div>
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <div class="container footer-inner">
       <p>© Adrien Rault — <span id="year"></span></p>
-      <p><a href="mentions-legales.html">Mentions légales</a> · <a href="contact.html">Contact</a></p>
+      <p>
+        <a href="mentions-legales.html">Mentions légales</a> ·
+        <a href="contact.html">Contact</a>
+      </p>
     </div>
   </footer>
 
-  <script src="app.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const items = document.querySelectorAll(".reveal");
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) e.target.classList.add("is-visible");
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -10% 0px" });
+
+    items.forEach(el => io.observe(el));
+  </script>
 </body>
 </html>

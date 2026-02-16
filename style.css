@@ -159,11 +159,11 @@ img{ max-width:100%; display:block; }
 .hero-overlay{
   position:absolute;
   inset:0;
-  background:linear-gradient(
+  /* background:linear-gradient(
     180deg,
     rgba(255,255,255,.45),
     rgba(255,255,255,.55)
-  );
+  ); */
 }
 
 .hero-card{
@@ -347,3 +347,12 @@ main{
 @media (max-width:520px){
   .hero-card{ top:18px; }
 }
+
+.site-title{
+  margin:0;
+  font-weight:900; /* plus fort impact */
+  font-size:clamp(2.1rem,3.6vw,3.2rem);
+  color:var(--blue-900);
+  font-family: 'Roboto', sans-serif;
+}
+
