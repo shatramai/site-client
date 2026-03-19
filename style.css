@@ -9,7 +9,7 @@
   --text:#12202c;
   --muted: rgba(18,32,44,.72);
 
-  --surface: rgba(255,255,255,.75);
+  --surface: rgba(255,255,255,.65);
   --surface-strong: rgba(255,255,255,.88);
   --border: rgba(15,47,74,.14);
 
@@ -18,6 +18,8 @@
 
   --max: 1080px;
 }
+
+/* RESET */
 
 *{ box-sizing:border-box; }
 
@@ -47,9 +49,7 @@ img{ max-width:100%; display:block; }
   margin: 0 auto;
 }
 
-/* =========================
-   ACCESSIBILITÉ
-   ========================= */
+/* ACCESSIBILITÉ */
 
 .skip-link{
   position:absolute;
@@ -65,9 +65,7 @@ img{ max-width:100%; display:block; }
   z-index:9999;
 }
 
-/* =========================
-   HEADER
-   ========================= */
+/* HEADER */
 
 .site-header{
   padding:34px 0 16px;
@@ -76,10 +74,15 @@ img{ max-width:100%; display:block; }
 
 .site-title{
   margin:0;
-  font-weight:900;
+  font-weight:600;
   font-size:clamp(2.1rem,3.6vw,3.2rem);
   color:var(--blue-900);
-  font-family: 'Roboto', sans-serif;
+  font-family:'Playfair Display', serif;
+  letter-spacing:.5px;
+}
+
+.site-title span{
+  font-weight:700;
 }
 
 .site-subtitle{
@@ -89,9 +92,7 @@ img{ max-width:100%; display:block; }
   color:rgba(15,47,74,.78);
 }
 
-/* =========================
-   NAVIGATION
-   ========================= */
+/* NAV */
 
 .nav-band{
   padding:10px 0 22px;
@@ -128,9 +129,7 @@ img{ max-width:100%; display:block; }
   border:1px solid rgba(31,83,118,.18);
 }
 
-/* =========================
-   HERO
-   ========================= */
+/* HERO */
 
 .hero{
   padding:0 0 40px;
@@ -142,7 +141,10 @@ img{ max-width:100%; display:block; }
   overflow:hidden;
   border:1px solid var(--border);
   box-shadow:var(--shadow);
-  min-height:380px;
+  min-height:420px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 
 .hero-image{
@@ -151,27 +153,32 @@ img{ max-width:100%; display:block; }
   width:100%;
   height:100%;
   object-fit:cover;
+  filter:contrast(1.05) saturate(1.05);
 }
 
 .hero-overlay{
   position:absolute;
   inset:0;
+  background:linear-gradient(
+    180deg,
+    rgba(255,255,255,.25),
+    rgba(255,255,255,.45)
+  );
 }
 
 .hero-card{
   position:relative;
   z-index:2;
 
-  width:min(760px,calc(100% - 28px));
-  margin:0 auto;
-  top:24px;
+  width:min(720px, calc(100% - 32px));
+  padding:24px;
 
-  padding:22px;
-  background:var(--surface);
+  background:rgba(255,255,255,.60);
   border:1px solid var(--border);
   border-radius:var(--radius);
-  backdrop-filter:blur(10px);
-  box-shadow:0 12px 30px rgba(0,0,0,.06);
+  backdrop-filter:blur(14px);
+  box-shadow:0 14px 35px rgba(0,0,0,.08);
+
   text-align:center;
 }
 
@@ -185,6 +192,8 @@ img{ max-width:100%; display:block; }
   margin:0;
   color:rgba(18,32,44,.85);
 }
+
+/* ACTIONS / PILLS */
 
 .hero-actions{
   margin-top:16px;
@@ -215,9 +224,7 @@ img{ max-width:100%; display:block; }
   font-size:.9rem;
 }
 
-/* =========================
-   BOUTONS
-   ========================= */
+/* BUTTONS */
 
 .btn{
   padding:12px 16px;
@@ -240,9 +247,7 @@ img{ max-width:100%; display:block; }
   border:1px solid var(--border);
 }
 
-/* =========================
-   MAIN
-   ========================= */
+/* MAIN */
 
 main{
   padding:24px 0 50px;
@@ -322,9 +327,7 @@ main{
   flex-wrap:wrap;
 }
 
-/* =========================
-   BLOCS ENRICHIS
-   ========================= */
+/* BLOCS ENRICHIS */
 
 .info-strip{
   display:flex;
@@ -343,7 +346,7 @@ main{
 
 .split-highlight{
   display:grid;
-  grid-template-columns: minmax(0, 1.4fr) minmax(260px, .8fr);
+  grid-template-columns:minmax(0, 1.4fr) minmax(260px, .8fr);
   gap:16px;
   align-items:stretch;
 }
@@ -400,9 +403,7 @@ main{
   font-weight:600;
 }
 
-/* =========================
-   PORTRAIT
-   ========================= */
+/* PORTRAIT */
 
 .portrait-section{
   display:grid;
@@ -416,9 +417,14 @@ main{
   box-shadow:0 12px 30px rgba(0,0,0,.05);
 }
 
+.portrait-media{
+  width:100%;
+}
+
 .portrait-media img{
   width:100%;
-  aspect-ratio: 4 / 5;
+  height:100%;
+  max-height:520px;
   object-fit:cover;
   border-radius:calc(var(--radius) - 2px);
   box-shadow:0 14px 30px rgba(0,0,0,.08);
@@ -448,9 +454,7 @@ main{
   font-size:.9rem;
 }
 
-/* =========================
-   FAQ
-   ========================= */
+/* FAQ */
 
 .faq-stack{
   display:grid;
@@ -470,9 +474,7 @@ main{
   margin:0;
 }
 
-/* =========================
-   CONTACT
-   ========================= */
+/* CONTACT */
 
 .contact-layout{
   display:grid;
@@ -487,9 +489,7 @@ main{
   gap:16px;
 }
 
-/* =========================
-   FOOTER
-   ========================= */
+/* FOOTER */
 
 .site-footer{
   border-top:1px solid var(--border);
@@ -510,13 +510,11 @@ main{
   text-underline-offset:3px;
 }
 
-/* =========================
-   REVEAL
-   ========================= */
+/* REVEAL */
 
 .reveal{
   opacity:0;
-  transform:translateY(10px);
+  transform:translateY(12px);
   transition:.5s ease;
 }
 
@@ -525,9 +523,7 @@ main{
   transform:none;
 }
 
-/* =========================
-   RESPONSIVE
-   ========================= */
+/* RESPONSIVE */
 
 @media (max-width:920px){
   .card{ grid-column:1 / -1; }
@@ -557,15 +553,61 @@ main{
   }
 }
 
+/* MOBILE FIX HERO */
+
 @media (max-width:520px){
-  .hero-card{ top:18px; }
+
+  .site-title{
+    font-size:clamp(1.9rem, 8vw, 2.5rem);
+  }
+
+  .hero-frame{
+    min-height:520px;
+    align-items:flex-start;
+    justify-content:center;
+    padding:18px 10px;
+  }
+
+  .hero-card{
+    width:100%;
+    padding:20px;
+  }
+
+  .hero-card h2{
+    font-size:1.2rem;
+  }
+
+  .hero-card p{
+    font-size:.95rem;
+  }
+
+  .hero-actions{
+    flex-direction:column;
+  }
+
+  .hero-actions--left{
+    justify-content:center;
+  }
+
+  .btn{
+    width:100%;
+    text-align:center;
+  }
+
+  .pill{
+    font-size:.82rem;
+  }
 
   .info-chip{
     width:100%;
     border-radius:16px;
   }
 
-  .hero-actions--left{
-    justify-content:center;
+  .portrait-section{
+    padding:18px;
+  }
+
+  .portrait-media img{
+    max-height:420px;
   }
 }
