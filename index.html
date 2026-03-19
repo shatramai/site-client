@@ -45,7 +45,7 @@
           <h2>Un espace d’écoute confidentiel, à votre rythme</h2>
           <p>
             Je vous accueille au cabinet à Lille (Vauban), du lundi au vendredi. Le suivi se fonde sur la parole du patient,
-            dans un cadre défini ensemble pour que l’espace soit le plus sécurisant possible.
+            dans un cadre défini ensemble afin que l’espace soit le plus sécurisant possible.
           </p>
 
           <div class="hero-actions">
@@ -71,6 +71,16 @@
 
   <main id="contenu">
     <div class="container">
+
+      <section class="section section-tight">
+        <div class="info-strip reveal">
+          <div class="info-chip"><strong>Cabinet :</strong> 59 Boulevard Vauban, Lille</div>
+          <div class="info-chip"><strong>Consultation :</strong> 60 €</div>
+          <div class="info-chip"><strong>Paiement :</strong> chèques et espèces</div>
+          <div class="info-chip"><strong>RDV :</strong> via Doctolib ou par téléphone</div>
+        </div>
+      </section>
+
       <section class="section">
         <div class="section-head reveal">
           <h2>Comment se déroulent les séances ?</h2>
@@ -83,24 +93,49 @@
           <article class="card reveal">
             <h3>1) Premier rendez-vous</h3>
             <p>
-              Nous clarifions votre demande et le contexte. Les tarifs et modalités sont abordés lors du premier rendez-vous.
+              Le premier temps permet de clarifier votre demande, votre contexte et ce qui vous amène à consulter.
+              C’est aussi l’occasion d’échanger sur le cadre des séances.
             </p>
           </article>
 
           <article class="card reveal">
             <h3>2) Un suivi ajusté</h3>
             <p>
-              Un accompagnement construit ensemble, au rythme qui vous convient, avec une attention particulière à votre singularité.
+              Le travail thérapeutique se construit ensemble, au rythme qui vous convient, avec une attention particulière
+              portée à votre singularité.
             </p>
           </article>
 
           <article class="card card--wide reveal">
-            <h3>Thématiques</h3>
+            <h3>3) Un espace pour mettre en mots</h3>
             <p>
-              Souffrance au travail, burn-out, deuil, anxiété, dépression, troubles anxieux, etc.
-              <strong>Les motifs de consultation sont aussi variés qu’il existe de formes de souffrance.</strong>
+              Le suivi repose sur la parole du patient. L’objectif n’est pas d’appliquer une réponse standard,
+              mais d’élaborer une écoute la plus juste possible à partir de votre situation propre.
             </p>
           </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="split-highlight reveal">
+          <div class="split-highlight__content">
+            <span class="eyebrow">Approche</span>
+            <h2>Une pratique clinique fondée sur l’écoute</h2>
+            <p>
+              Chaque demande est singulière. Les motifs de consultation sont variés, mais le travail commence toujours
+              par un temps d’écoute permettant de préciser ce qui fait difficulté pour vous aujourd’hui.
+            </p>
+            <div class="hero-actions hero-actions--left">
+              <a class="btn" href="presentation.html">Découvrir la présentation</a>
+              <a class="btn btn--ghost" href="accompagnement.html">Voir les accompagnements</a>
+            </div>
+          </div>
+
+          <aside class="quote-card">
+            <p>
+              « Le cadre des séances est défini avec le patient et pour lui, afin que l’espace soit le plus sécurisant possible. »
+            </p>
+          </aside>
         </div>
       </section>
 
@@ -129,16 +164,17 @@
             <h3>Tarif</h3>
             <p>
               Consultation psychologique : <strong>60 €</strong><br>
-              Paiement : <strong>chèques & espèces</strong> (CB non acceptée)
+              Paiement : <strong>chèques & espèces</strong>
             </p>
           </div>
         </div>
 
         <div class="actions reveal">
           <a class="btn" href="contact.html">Contact & localisation</a>
-          <a class="btn btn--ghost" href="accompagnement.html">Voir les motifs</a>
+          <a class="btn btn--ghost" href="faq.html">Questions fréquentes</a>
         </div>
       </section>
+
     </div>
   </main>
 
@@ -152,17 +188,6 @@
     </div>
   </footer>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-
-    const items = document.querySelectorAll(".reveal");
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) e.target.classList.add("is-visible");
-      });
-    }, { threshold: 0.12, rootMargin: "0px 0px -10% 0px" });
-
-    items.forEach(el => io.observe(el));
-  </script>
+  <script src="app.js"></script>
 </body>
 </html>

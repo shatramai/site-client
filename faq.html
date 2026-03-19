@@ -43,7 +43,7 @@
 
         <div class="hero-card reveal">
           <h2>FAQ</h2>
-          <p>Réponses aux questions fréquentes (tarifs, horaires, paiements, etc.).</p>
+          <p>Réponses aux questions fréquentes sur les consultations, les modalités pratiques et la prise de rendez-vous.</p>
 
           <div class="hero-actions">
             <a class="btn" href="contact.html">Me contacter</a>
@@ -58,29 +58,39 @@
 
   <main id="contenu">
     <div class="container">
+
+      <section class="section section-tight">
+        <div class="info-strip reveal">
+          <div class="info-chip"><strong>Tarif :</strong> 60 €</div>
+          <div class="info-chip"><strong>Paiement :</strong> chèques / espèces</div>
+          <div class="info-chip"><strong>Lieu :</strong> 59 Boulevard Vauban, Lille</div>
+          <div class="info-chip"><strong>Prise de RDV :</strong> Doctolib</div>
+        </div>
+      </section>
+
       <section class="section">
         <div class="section-head reveal">
           <h2>Questions fréquentes</h2>
-          <p class="muted">N’hésite pas à modifier/compléter selon ce que ton client souhaite afficher.</p>
+          <p class="muted">Quelques repères pratiques avant une première consultation</p>
         </div>
 
-        <div class="grid">
-          <article class="card card--wide reveal">
+        <div class="faq-stack">
+          <article class="faq-item reveal">
             <h3>Quels sont les tarifs ?</h3>
-            <p>Consultation psychologique : <strong>60 €</strong> (indication). Les tarifs sont abordés lors du premier rendez-vous.</p>
+            <p>La consultation est proposée au tarif de <strong>60 €</strong>.</p>
           </article>
 
-          <article class="card card--wide reveal">
+          <article class="faq-item reveal">
             <h3>Quels moyens de paiement sont acceptés ?</h3>
-            <p><strong>Chèques et espèces</strong>. Les cartes bancaires ne sont pas acceptées.</p>
+            <p><strong>Les chèques et les espèces</strong> sont acceptés. La carte bancaire n’est pas acceptée.</p>
           </article>
 
-          <article class="card card--wide reveal">
+          <article class="faq-item reveal">
             <h3>La consultation est-elle remboursée ?</h3>
-            <p>La consultation n’est pas remboursée par l’Assurance Maladie.</p>
+            <p>Les consultations ne sont pas remboursées par l’Assurance Maladie.</p>
           </article>
 
-          <article class="card card--wide reveal">
+          <article class="faq-item reveal">
             <h3>Quels sont les horaires d’ouverture ?</h3>
             <p>
               Lundi : 09h–13h / 14h–18h<br>
@@ -91,15 +101,22 @@
             </p>
           </article>
 
-          <article class="card card--wide reveal">
+          <article class="faq-item reveal">
             <h3>Comment prendre rendez-vous ?</h3>
             <p>
-              Vous pouvez prendre rendez-vous via Doctolib :
-              <a href="https://www.doctolib.fr/psychologue/lille/adrien-rault" target="_blank" rel="noopener"><strong>voir la page Doctolib</strong></a>.
+              Les rendez-vous peuvent être pris en ligne via
+              <a href="https://www.doctolib.fr/psychologue/lille/adrien-rault" target="_blank" rel="noopener"><strong>Doctolib</strong></a>.
             </p>
           </article>
 
-          <article class="card card--wide reveal">
+          <article class="faq-item reveal">
+            <h3>Que se passe-t-il lors d’un premier rendez-vous ?</h3>
+            <p>
+              Le premier entretien permet de préciser votre demande, le contexte de consultation et de poser les bases du cadre thérapeutique.
+            </p>
+          </article>
+
+          <article class="faq-item reveal">
             <h3>En cas d’urgence ?</h3>
             <p>En cas d’urgence, contactez le <strong>15 (Samu)</strong>.</p>
           </article>
@@ -107,9 +124,10 @@
 
         <div class="actions reveal">
           <a class="btn" href="contact.html">Contact & localisation</a>
-          <a class="btn btn--ghost" href="accompagnement.html">Voir les motifs</a>
+          <a class="btn btn--ghost" href="presentation.html">Voir la présentation</a>
         </div>
       </section>
+
     </div>
   </main>
 
@@ -123,17 +141,6 @@
     </div>
   </footer>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-
-    const items = document.querySelectorAll(".reveal");
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) e.target.classList.add("is-visible");
-      });
-    }, { threshold: 0.12, rootMargin: "0px 0px -10% 0px" });
-
-    items.forEach(el => io.observe(el));
-  </script>
+  <script src="app.js"></script>
 </body>
 </html>

@@ -38,12 +38,12 @@
   <section class="hero" aria-label="Contact">
     <div class="container">
       <div class="hero-frame">
-        <img class="hero-image" src="assets/bg/itachi.jpg" alt="" />
+        <img class="hero-image" src="assets/bg/home-bg.jpg" alt="" />
         <div class="hero-overlay" aria-hidden="true"></div>
 
         <div class="hero-card reveal">
           <h2>Contact & localisation</h2>
-          <p>Prendre rendez-vous en ligne ou contacter le cabinet.</p>
+          <p>Prendre rendez-vous en ligne, appeler le cabinet ou consulter les informations d’accès.</p>
 
           <div class="hero-actions">
             <a class="btn" href="tel:+33756808451">Appeler</a>
@@ -53,7 +53,7 @@
           </div>
 
           <div class="pills" aria-label="Infos rapides">
-            <span class="pill">59 Bd Vauban</span>
+            <span class="pill">59 Boulevard Vauban</span>
             <span class="pill">59800 Lille</span>
             <span class="pill">Chèques / espèces</span>
           </div>
@@ -64,70 +64,84 @@
 
   <main id="contenu">
     <div class="container">
+
       <section class="section">
         <div class="section-head reveal">
           <h2>Informations pratiques</h2>
-          <p class="muted">Accès, horaires, coordonnées</p>
+          <p class="muted">Coordonnées, horaires et accès au cabinet</p>
         </div>
 
-        <div class="grid">
-          <article class="card reveal">
-            <h3>Adresse</h3>
-            <p>
-              <strong>59 Boulevard Vauban</strong><br>
-              59800 Lille
-            </p>
+        <div class="contact-layout">
+          <div class="contact-main reveal">
+            <div class="card">
+              <h3>Adresse du cabinet</h3>
+              <p>
+                <strong>59 Boulevard Vauban</strong><br>
+                59800 Lille
+              </p>
 
-            <h3 style="margin-top:14px;">Transports</h3>
-            <p>
-              Bus — Université Catholique (lignes 12 et 18)<br>
-              Bus — Rue de Toul (ligne 18)<br>
-              Bus — Rue du Port (ligne CITL)
-            </p>
-          </article>
+              <h3 style="margin-top:16px;">Coordonnées</h3>
+              <p>
+                Téléphone : <a href="tel:+33756808451"><strong>07 56 80 84 51</strong></a><br>
+                Rendez-vous en ligne :
+                <a href="https://www.doctolib.fr/psychologue/lille/adrien-rault" target="_blank" rel="noopener"><strong>Doctolib</strong></a>
+              </p>
 
-          <article class="card reveal">
-            <h3>Coordonnées</h3>
-            <p>
-              Téléphone : <a href="tel:+33756808451"><strong>07 56 80 84 51</strong></a><br>
-              RDV : <a href="https://www.doctolib.fr/psychologue/lille/adrien-rault" target="_blank" rel="noopener"><strong>Doctolib</strong></a>
-            </p>
+              <h3 style="margin-top:16px;">Carte</h3>
+              <iframe
+                title="Cabinet Adrien Rault – 59 Boulevard Vauban, 59800 Lille"
+                src="https://www.google.com/maps?q=59%20Boulevard%20Vauban%2059800%20Lille&output=embed"
+                width="100%"
+                height="340"
+                style="border:0; border-radius:16px;"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
 
-            <h3 style="margin-top:14px;">Horaires</h3>
-            <p>
-              Lun : 09h–13h / 14h–18h<br>
-              Mar : 09h–13h / 14h–18h<br>
-              Mer : 09h–13h<br>
-              Jeu : 09h–13h / 14h–18h<br>
-              Ven : 09h–13h
-            </p>
+          <aside class="contact-side reveal">
+            <div class="card">
+              <h3>Horaires</h3>
+              <p>
+                Lun : 09h–13h / 14h–18h<br>
+                Mar : 09h–13h / 14h–18h<br>
+                Mer : 09h–13h<br>
+                Jeu : 09h–13h / 14h–18h<br>
+                Ven : 09h–13h
+              </p>
+            </div>
 
-            <h3 style="margin-top:14px;">Paiement</h3>
-            <p>
-              Chèques et espèces (CB non acceptée)<br>
-              Consultation : <strong>60 €</strong>
-            </p>
-          </article>
+            <div class="card">
+              <h3>Accès</h3>
+              <p>
+                Bus — Université Catholique (lignes 12 et 18)<br>
+                Bus — Rue de Toul (ligne 18)<br>
+                Bus — Rue du Port (ligne CITL)
+              </p>
+            </div>
 
-          <article class="card card--wide reveal">
-            <h3>Carte</h3>
-            <p class="muted">Vous pouvez utiliser la carte ci-dessous pour localiser le cabinet.</p>
+            <div class="card">
+              <h3>Tarif & paiement</h3>
+              <p>
+                Consultation psychologique : <strong>60 €</strong><br>
+                Paiement : <strong>chèques et espèces</strong><br>
+                Carte bancaire non acceptée
+              </p>
+            </div>
 
-            <iframe
-              title="Cabinet Adrien Rault – 59 Boulevard Vauban, 59800 Lille"
-              src="https://www.google.com/maps?q=59%20Boulevard%20Vauban%2059800%20Lille&output=embed"
-              width="100%"
-              height="320"
-              style="border:0; border-radius:16px;"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-            <p class="muted" style="margin-top:12px;">
-              Parking public : Résidence Mogador (privé) — 82 Rue Meurein, Lille
-            </p>
-          </article>
+            <div class="card soft-card">
+              <h3>Prendre rendez-vous</h3>
+              <p>
+                La prise de rendez-vous peut se faire directement en ligne sur Doctolib.
+              </p>
+              <div class="actions">
+                <a class="btn" href="https://www.doctolib.fr/psychologue/lille/adrien-rault" target="_blank" rel="noopener">Accéder à Doctolib</a>
+              </div>
+            </div>
+          </aside>
         </div>
       </section>
+
     </div>
   </main>
 
@@ -141,17 +155,6 @@
     </div>
   </footer>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-
-    const items = document.querySelectorAll(".reveal");
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) e.target.classList.add("is-visible");
-      });
-    }, { threshold: 0.12, rootMargin: "0px 0px -10% 0px" });
-
-    items.forEach(el => io.observe(el));
-  </script>
+  <script src="app.js"></script>
 </body>
 </html>

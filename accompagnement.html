@@ -55,7 +55,7 @@
             </a>
           </div>
 
-          <div class="pills" aria-label="Approches / actes">
+          <div class="pills" aria-label="Approches">
             <span class="pill">Psychothérapie</span>
             <span class="pill">Thérapie analytique</span>
             <span class="pill">Orientation psychanalytique</span>
@@ -71,38 +71,38 @@
       <section class="section">
         <div class="section-head reveal">
           <h2>Motifs fréquents</h2>
-          <p class="muted">Exemples (selon informations Doctolib)</p>
+          <p class="muted">Exemples de demandes pouvant être travaillées en séance</p>
         </div>
 
         <div class="grid">
           <article class="card reveal">
             <h3>Souffrance au travail</h3>
-            <p>Pression, perte de sens, conflits, épuisement, difficultés relationnelles au travail.</p>
+            <p>Pression, perte de sens, conflits, épuisement, difficultés relationnelles dans le cadre professionnel.</p>
           </article>
 
           <article class="card reveal">
             <h3>Burn-out</h3>
-            <p>Fatigue persistante, saturation, irritabilité, sentiment de ne plus tenir.</p>
+            <p>Fatigue persistante, saturation, irritabilité, impression de ne plus pouvoir faire face.</p>
           </article>
 
           <article class="card reveal">
             <h3>Anxiété</h3>
-            <p>Ruminations, inquiétude constante, attaques de panique, tensions, troubles anxieux.</p>
+            <p>Ruminations, inquiétude constante, tensions, angoisse, attaques de panique, troubles anxieux.</p>
           </article>
 
           <article class="card reveal">
             <h3>Dépression</h3>
-            <p>Baisse d’humeur durable, perte d’élan, découragement, isolement, troubles dépressifs.</p>
+            <p>Baisse d’humeur durable, perte d’élan, découragement, isolement, sentiment d’impasse.</p>
           </article>
 
           <article class="card reveal">
             <h3>Deuil</h3>
-            <p>Épreuve de la perte, bouleversements, difficulté à traverser une période de transition.</p>
+            <p>Épreuve de la perte, bouleversements psychiques, difficulté à traverser un moment de transition.</p>
           </article>
 
           <article class="card reveal">
-            <h3>TCA (si concerné)</h3>
-            <p>Troubles du comportement alimentaire : souffrance associée, vécu, rapport au corps.</p>
+            <h3>Autres difficultés</h3>
+            <p>Les motifs de consultation sont aussi variés qu’il existe de formes de souffrance psychique.</p>
           </article>
         </div>
       </section>
@@ -110,14 +110,28 @@
       <section class="section">
         <div class="section-head reveal">
           <h2>Cadre et rythme</h2>
-          <p class="muted">Un suivi construit ensemble, selon votre demande.</p>
+          <p class="muted">Un suivi construit ensemble, selon votre demande</p>
         </div>
 
         <div class="grid">
-          <article class="card card--wide reveal">
+          <article class="card reveal">
+            <h3>Un temps pour clarifier</h3>
             <p>
-              Le suivi se fonde sur la parole du patient, dans un cadre défini avec lui et pour lui.
-              L’objectif est de rendre l’espace le plus sécurisant possible et d’avancer de façon ajustée, au cas par cas.
+              Les premières séances permettent de préciser ce qui fait difficulté, ce que vous attendez du suivi et la manière de travailler ensemble.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <h3>Un espace sécurisant</h3>
+            <p>
+              Le cadre est défini avec le patient et pour lui, afin de rendre l’espace le plus soutenant et sécurisant possible.
+            </p>
+          </article>
+
+          <article class="card card--wide reveal">
+            <h3>Un travail ajusté au cas par cas</h3>
+            <p>
+              Le suivi repose sur la parole du patient. Le rythme des séances et l’orientation du travail se construisent progressivement, au regard de votre situation singulière.
             </p>
 
             <div class="actions">
@@ -125,6 +139,14 @@
               <a class="btn btn--ghost" href="faq.html">Questions fréquentes</a>
             </div>
           </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="quote-banner reveal">
+          <p>
+            « Les motifs de consultation sont aussi variés qu’il existe de formes de souffrance. »
+          </p>
         </div>
       </section>
 
@@ -141,17 +163,6 @@
     </div>
   </footer>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-
-    const items = document.querySelectorAll(".reveal");
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) e.target.classList.add("is-visible");
-      });
-    }, { threshold: 0.12, rootMargin: "0px 0px -10% 0px" });
-
-    items.forEach(el => io.observe(el));
-  </script>
+  <script src="app.js"></script>
 </body>
 </html>
